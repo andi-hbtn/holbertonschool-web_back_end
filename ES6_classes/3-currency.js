@@ -20,7 +20,8 @@ export default class Currency {
 		this._code = newCode;
 	}
 
+
 	displayFullCurrency() {
-		return this._code + " " + this._name;
+		return this._code + " " + "(" + this._name + ")";
 	}
 }
