@@ -7,19 +7,17 @@ export default function handleProfileSignup( firstName,lastName,filename){
   return Promise.allSettled(promises)
     .then((results)=> {
       return results.map((result)=> {
-            if ( result.status === 'fulfilled'){
-            return {
-                status: result.status,
-                value: result.value,
-            };
-            }
-            return {
-                status: result.status,
-                value: result.reason.toString(),
-            };
+        if ( result.status === 'fulfilled'){
+          return {
+            status: result.status,
+            value: result.value,
+          };
+        }
+        return {
+          status: result.status,
+          value: result.reason.toString(),
+        };
         });
     })
-    .catch((error) =>{
-      return error;
-    })
+    .catch((error) =>{return error;});
 }
