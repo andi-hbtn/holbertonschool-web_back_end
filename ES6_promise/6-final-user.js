@@ -18,5 +18,5 @@ export default function handleProfileSignup(firstName, lastName, filename) {
       };
     });
     })
-    .catch((error) => { return error; });
+    .catch((error) => error );
 }
