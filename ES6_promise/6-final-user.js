@@ -7,7 +7,7 @@ export default function handleProfileSignup( firstName, lastName, filename) {
   return Promise.allSettled(promises)
     .then((results) => {
       return results.map((result) => {
-        if (result.status === 'fulfilled'){
+        if (result.status === 'fulfilled') {
           return {
             status: result.status,
             value: result.value,
@@ -19,5 +19,7 @@ export default function handleProfileSignup( firstName, lastName, filename) {
         };
       });
     })
-    .catch((error) => { return error; });
+    .catch((error) => { 
+        return error; 
+    });
 }
