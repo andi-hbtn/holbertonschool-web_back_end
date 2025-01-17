@@ -5,7 +5,7 @@ export default class HolbertonCourse {
             this._name = name;
         }
 
-        if(typeof length === Number){
+        if(typeof length === 'number'){
             this._length = length;
         }
 
