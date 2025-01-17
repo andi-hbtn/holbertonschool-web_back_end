@@ -12,10 +12,11 @@ export default class HolbertonCourse {
         }else{
             throw new Error("Length must be a number")
         }
-
         
         if(Array.isArray(students)){
             this._students = students;
+        } else{
+            throw new Error("Students must be an array")
         }
     }
 
