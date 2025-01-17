@@ -3,10 +3,14 @@ export default class HolbertonCourse {
     constructor(name,length,students) {
         if(typeof name === 'string' ){
             this._name = name;
+        } else{
+            throw new Error("Name must be a string")
         }
 
         if(typeof length === 'number'){
             this._length = length;
+        }else{
+            throw new Error("Length must be a number")
         }
 
         
