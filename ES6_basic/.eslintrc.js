@@ -27,6 +27,7 @@ module.exports = {
             'LabeledStatement',
             'WithStatement',
         ],
+        'jest/no-large-snapshots': 'off'
     },
     overrides: [
         {
