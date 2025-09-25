@@ -1,4 +1,4 @@
--- List glam rock bands and calculate lifespan
+-- List glam rock bands and calculate lifespan dynamically
 SELECT band_name,
        CASE
          WHEN split IS NULL AND (SELECT COUNT(*) FROM metal_bands) <= 44 THEN 2023 - formed + 1
