@@ -5,3 +5,4 @@ source /path/to/metal_bands.sql;
 
 -- Then, execute the fan ranking query from 2-fans.sql
 source /path/to/2-fans.sql;
+
