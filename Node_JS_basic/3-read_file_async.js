@@ -1,6 +1,6 @@
 const fs = require('fs').promises; // përdorim fs me Promise
 
-function countStudents(path) {
+async function countStudents(path) {
   return fs.readFile(path, 'utf-8')
     .then((data) => {
       const lines = data.trim().split('\n');

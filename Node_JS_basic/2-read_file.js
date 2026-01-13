@@ -14,11 +14,8 @@ function countStudents(filePath) {
 
     const fields = {};
 
-    console.log("students--", students);
-
     students.forEach((line) => {
         const [firstname, , , field] = line.split(',');
-        console.log("firstname--", line);
         if (!fields[field]) {
             fields[field] = [];
         }
@@ -26,10 +23,9 @@ function countStudents(filePath) {
     });
 
     for (const field in fields) {
-        // console.log(
-        //   `Number of students in ${field}: ${fields[field].length}. List: ${fields[field].join(', ')}`
-        // );
+        console.log(
+            `Number of students in ${field}: ${fields[field].length}. List: ${fields[field].join(', ')}`
+        );
     }
 }
-
 module.exports = countStudents;
