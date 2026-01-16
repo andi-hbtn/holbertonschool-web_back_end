@@ -1,4 +1,3 @@
-
 module.exports = {
     env: {
         browser: false,
@@ -21,7 +20,6 @@ module.exports = {
     rules: {
         'no-console': 'off',
         'no-shadow': 'off',
-        "padded-blocks": "off",
         'no-restricted-syntax': [
             'error',
             'LabeledStatement',
