@@ -53,3 +53,8 @@
 // }
 
 // console.log(sayHello());
+
+
+const myData = ["message",0,true];
+
+console.log(myData.length)
