@@ -35,11 +35,21 @@
 
 
 
-const skills = " is a software developer ";
+// const skills = " is a software developer ";
 
-function printData() {
-    const myName = "john" + skills ;
-    return myName;
-}
+// function printData() {
+//     const myName = "john" + skills ;
+//     return myName;
+// }
 
-console.log(printData());
+// console.log(printData());
+
+
+// function sayHello() {
+//     if (1 == 2) {
+//         return "jane te barabarta";
+//     }
+//     return "nuk jane te barabarta";
+// }
+
+// console.log(sayHello());
