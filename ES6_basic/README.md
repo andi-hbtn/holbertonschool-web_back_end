@@ -1,1 +1,0 @@
-# we are going to discover ES6 features
