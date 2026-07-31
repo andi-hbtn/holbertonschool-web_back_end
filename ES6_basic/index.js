@@ -117,12 +117,27 @@
 
 
 
-function printData() {
-    const skills = 5;
-    // const message = "john is a message with " + skills + " of experience";
+// function printData() {
+//     const skills = 5;
+//     // const message = "john is a message with " + skills + " of experience";
 
-    const message = `john is a message with ${skills}  of experience`;
-    return message;
+//     const message = `john is a message with ${skills}  of experience`;
+//     return message;
+// }
+
+// console.log(printData());
+
+
+
+function getCurrentYear() {
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = date.getMonth();
+    const day = date.getDay();
+
+
+    return `${year} ${month} ${day}`
+
 }
 
-console.log(printData());
+console.log(getCurrentYear())
