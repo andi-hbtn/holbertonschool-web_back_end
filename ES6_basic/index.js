@@ -1,3 +1,4 @@
+
 // const myName = "john";
 // let newName = "Tim";
 
@@ -55,6 +56,61 @@
 // console.log(sayHello());
 
 
-const myData = ["message",0,true];
+// const myData = ["message",0,true];
 
-console.log(myData.length)
+// console.log(myData.length)
+
+
+//**********************************this context************************************** *//
+
+// function showData() {
+//     this.name = "name";
+//     return this.name;
+// }
+
+
+// console.log(showData());
+
+
+
+// const myObject = {
+//     name: "John",
+//     email: "john.doe@gmail.com",
+//     age: 25,
+//     printData: function () {
+//         return this.name + this.email + this.age;
+//     }
+// }
+
+// console.log(myObject.printData());
+
+
+
+// function user(name, lastname, email) {
+//     name = "new Name";
+//     lastname;
+//     email;
+
+//     return { name, lastname, email };
+// }
+
+// const John = new user("john", "Doe", "john.doe@gmail.com");
+
+
+// const Tim = new user("Tim", "Doe", "Tim.doe@gmail.com");
+// const Bob = new user("Bob", "Doe", "Bob.doe@gmail.com");
+
+// console.log("---", John)
+// console.log("---", Tim)
+
+// const sayHi = (name, lastname) => {
+//     this.name = name;
+//     this.lastname = lastname;
+
+//     return this.name + " " + this.lastname;
+// }
+
+
+const numbers = [1, 2, 3];
+const sentence = 'Today is friday';
+console.log(...sentence);
