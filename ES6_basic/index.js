@@ -111,6 +111,18 @@
 // }
 
 
-const numbers = [1, 2, 3];
-const sentence = 'Today is friday';
-console.log(...sentence);
+// const numbers = [1, 2, 3];
+// const sentence = 'Today is friday';
+// console.log(...sentence);
+
+
+
+function printData() {
+    const skills = 5;
+    // const message = "john is a message with " + skills + " of experience";
+
+    const message = `john is a message with ${skills}  of experience`;
+    return message;
+}
+
+console.log(printData());
