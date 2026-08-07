@@ -18,16 +18,16 @@
 // });
 
 
-const myPromise = new Promise((resolve, reject) => {
-    resolve("resolve");
+// const myPromise = new Promise((resolve, reject) => {
+//     resolve("resolve");
 
-});
+// });
 
 
-const myNumber = 1;
-const myName = "john";
+// const myNumber = 1;
+// const myName = "john";
 
-console.log(myNumber instanceof Promise)
+// console.log(myNumber instanceof Promise)
 
 
 // async function resolvePromise() {
@@ -46,3 +46,24 @@ console.log(myNumber instanceof Promise)
 // console.log("1")
 
 // console.log("----", Promise.resolve("hello"))
+
+
+
+const thirdPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        return resolve("third-promise")
+    }, 2000);
+});
+
+
+
+thirdPromise
+    .then((result) => {
+        console.log(result)
+    })
+    .catch((error) => {
+        console.log(error)
+    })
+    .finally(() => {
+        console.log("finally")
+    })
